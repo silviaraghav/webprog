@@ -1,0 +1,163 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'sans-serif';
+  background: url('bcg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  line-height: 1.6;
+  position: relative;
+  padding: 1rem;
+}
+
+/* Background Overlay */
+.background-overlay {
+  position: fixed;
+  inset: 0;
+  background:rgba(202, 199, 199, 0.575);
+  z-index: -1;
+}
+
+/* Glassmorphism Container */
+.glass-box {
+  background: rgba(167, 164, 164, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.headshot {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #0b0b0b;
+}
+
+/* Typography & Button */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+  font-familY:'VT323',monospace;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+a {
+  color: #0e0e0e;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff0090;
+  text-shadow: 0 0 5px #fff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #eff3f3;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ff0090;
+  color: #fff;
+}
+
+/* Zebra Table */
+table.zebra {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.zebra tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+table.zebra tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+table.zebra td {
+  padding: 0.8rem;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.hobby-list li a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Quote */
+.quote {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.profile-icons img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 4px;
+  background: rgba(255,255,255,0.3);
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.profile-icons img:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  border-color: #0077b5; 
+}
+.highlight {
+  color: red;
+  font-weight: bold;
+}
